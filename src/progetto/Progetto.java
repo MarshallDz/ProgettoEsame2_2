@@ -1,11 +1,10 @@
 package progetto;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Progetto {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         //array dei regali totali
         ArrayList<Regalo> regali = new ArrayList<>();
         //array regali ordinati dalle citta di un pianeta
@@ -110,15 +109,9 @@ public class Progetto {
                         for (Regalo r : regali) {
                             if (r.getNomeRegalo().equals(splittedArr[i])) {
                                 switch (r.getTipo()) {
-                                    case "arte":
-                                        regaliTipoArte++;
-                                        break;
-                                    case "elettronica":
-                                        regaliTipoElettronica++;
-                                        break;
-                                    case "sport":
-                                        regaliTipoSport++;
-                                        break;
+                                    case "arte" -> regaliTipoArte++;
+                                    case "elettronica" -> regaliTipoElettronica++;
+                                    case "sport" -> regaliTipoSport++;
                                 }
                             }
                         }
