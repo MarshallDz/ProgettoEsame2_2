@@ -4,7 +4,7 @@ public class Pianeta {
     private String nomePianeta;
      private int nCitta;
      private int nRegali;
-     private int costoRegali;
+     private int costoRegali = 0;
 
     public Pianeta(String n, int c) {
         this.nomePianeta = n;
@@ -13,7 +13,8 @@ public class Pianeta {
     public String getNomePianeta() {
         return nomePianeta;
     }
-    public void setnRegali(int nRegali) { this.nRegali = nRegali; }
+
+    public int getnCitta() { return nCitta; }
 
     public int getnRegali() { return nRegali; }
 
@@ -22,4 +23,6 @@ public class Pianeta {
     public void setCostoRegali(int costoRegali) {
         this.costoRegali = costoRegali;
     }
+    public void incrementaCosto(int p){ costoRegali+=p; }
+    public void incrementaNregali(int p){ nRegali+=p; }
 }

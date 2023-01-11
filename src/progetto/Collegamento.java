@@ -13,15 +13,7 @@ public class Collegamento {
         return destinazione;
     }
 
-    public void setDestinazione(String destinazione) {
-        this.destinazione = destinazione;
-    }
-
     public int getPeso() {
         return peso;
-    }
-
-    public void setPeso(int peso) {
-        this.peso = peso;
     }
 }
